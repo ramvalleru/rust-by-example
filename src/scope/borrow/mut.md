@@ -34,12 +34,12 @@ fn main() {
         title: "Gödel, Escher, Bach",
         year: 1979,
     };
-
-    // Create a mutable copy of `immutabook` and call it `mutabook`
-    let mut mutabook = immutabook;
     
     // Immutably borrow an immutable object
     borrow_book(&immutabook);
+    
+    // Create a mutable copy of `immutabook` and call it `mutabook`
+    let mut mutabook = immutabook;
 
     // Immutably borrow a mutable object
     borrow_book(&mutabook);
